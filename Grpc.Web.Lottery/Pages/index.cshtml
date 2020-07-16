@@ -1,0 +1,29 @@
+@page
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8"/>
+    <title>gRpc Web Lotery</title>
+</head>
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <div style="margin:0 0 10px 3px"><span>Escolha 6 números de 1 a 30:</span></div>
+    <table>
+        <tbody>
+            <tr>
+                <td><input type="number" name="chosen1" min="1" max="30"></td>
+                <td><input type="number" name="chosen2" min="1" max="30"></td>
+                <td><input type="number" name="chosen3" min="1" max="30"></td>
+            </tr>
+            <tr>
+                <td><input type="number" name="chosen4" min="1" max="30"></td>
+                <td><input type="number" name="chosen5" min="1" max="30"></td>
+                <td><input type="number" name="chosen6" min="1" max="30"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div style="margin: 20px 0 0 3px"><button id="buttonPlay">Jogar!</button></div>
+    <div style="margin: 20px 0 0 3px"><span id="resultSpan"></span></div>
+
+    <script src="~/js/dist/main.js"></script>
+</body>

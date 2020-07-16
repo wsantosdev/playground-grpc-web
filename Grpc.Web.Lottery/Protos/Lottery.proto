@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option csharp_namespace = "Grpc.Web.Lottery.Rpc";
+
+package Lottery;
+
+service LotteryService
+{
+    rpc Play(PlayRequest) returns (PlayReply);
+}
+
+message PlayRequest
+{
+    repeated int32 Numbers = 1;
+}
+
+message PlayReply
+{
+    string Message = 1;
+}
