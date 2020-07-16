@@ -1,7 +1,7 @@
 const {PlayRequest, PlayReply} = require('./Lottery_pb.js');
 const {LotteryServiceClient} = require('./Lottery_grpc_web_pb.js');
 
-const client = new LotteryServiceClient('https://localhost:5001'); //grpc-web-lottery.azurewebsites.net
+const client = new LotteryServiceClient('https://grpc-web-lottery.azurewebsites.net');
 
 (function() {
 
